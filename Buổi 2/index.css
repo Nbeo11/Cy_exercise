@@ -185,11 +185,11 @@
     position: relative;
 }
 
-.circle.circle1,
-.circle.circle2,
-.circle.circle3 {
+.circle1,
+.circle2,
+.circle3 {
     width: 90px;
-    height: 90ox;
+    height: 90px;
     border-radius: 50%;
     position: absolute;
 }
@@ -349,6 +349,10 @@ img {
     font-weight: 600;
 }
 
+.custom-password {
+    margin: 30px 0 0 0;
+}
+
 .custom-hr {
     border: none;
     height: 2px;
@@ -357,10 +361,22 @@ img {
     margin-top: 40px;
 }
 
+.checkbox {
+    width: 33px;
+    height: 33px;
+}
+
+.account {
+    color: #00000060; 
+    margin-top: 25pxc
+}
 .loginform {
     margin-top: 40px;
 }
 
+.input {
+    margin-top: 40px;
+}
 input {
     margin-top: 16px;
     border: 1px solid rgb(230, 230, 230);
@@ -428,6 +444,13 @@ footer {
     gap: 58px;
 }
 
+.report-title {
+    font-size: 44px; 
+    color: #8CC5F9; 
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-style: italic;
+}
 .custom-img {
     width: 586px;
     height: 694px;
@@ -461,4 +484,12 @@ footer {
 
 p {
     margin: 0;
+}
+
+.paragraph-after {
+    margin-top: 30px;
+}
+
+.account {
+    margin-top: 40px;
 }
