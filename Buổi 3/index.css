@@ -1,12 +1,15 @@
 .shop {
-    margin: 0px 63px 0px 81px;
     font-family: 'Unica One';
     font-weight: 400;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+
 }
 
 header {
     display: grid;
-    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     background-color: rgb(255, 255, 255);
 }
@@ -15,6 +18,7 @@ header {
     width: 236px;
     height: 132px;
 }
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -41,32 +45,68 @@ header {
     height: 46px;
 }
 
-.container {
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    grid-template-rows: 1fr 1fr 2fr;
-    gap: 10px;
-    background-color: rgb(255, 255, 255);
+.cotent {
     position: relative;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 82px;
+    position: relative;
+    z-index: 1;
+}
+
+.container2 {
+    margin: 160px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    margin: 151px 210px 0;
+    padding: 0 80px;
+    position: relative;
+    z-index: 1;
 }
 
 .product {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    z-index: -1;
+    overflow: hidden;
 
 }
 
 .product-picture {
-    margin-top: 51px;
+    margin-top: 1px;
     width: 1107px;
     height: 941px;
+    overflow: hidden;
+}
+
+.text-type {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #131212;
+    margin-bottom: 12px;
 }
 
 .type {
     font-size: 72px;
+    margin-top: 13px;
 }
 
 .review-shoes {
@@ -74,31 +114,55 @@ header {
     font-weight: 500;
     color: #131212;
     font-size: 20px;
+    line-height: 30px;
+    width: 488px;
+    margin-top: 24px;
+    opacity: 50%;
 }
-.color, .size, .rotate {
+
+.color,
+.size,
+.rotate {
     margin-left: 36px;
     position: relative;
 }
-.choose-color > button:hover,
-.choose-size > button:hover {
-    opacity: 0.8; 
-    transform: scale(1.1); 
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.choose-size > button {
-    width: 35px;
-    height: 35px;
+.type-shoes {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 488px;
+}
+
+.choose-color>button:hover,
+.choose-size>button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.choose-size>button {
+    width: 48px;
+    height: 48px;
     background-color: #fff;
     border: 1px solid #b3b3b3;
     margin-right: 5px;
+    margin-top: 28px;
 }
-.choose-color > button {
-    width: 35px;
-    height: 35px;
+
+.choose-color>button {
+    width: 48px;
+    height: 48px;
     background-color: #F2994A;
     border-radius: 50%;
     margin-right: 5px;
+    margin-top: 28px;
 }
+
 .choose-color button:nth-child(1) {
     background-color: #B6A179;
 }
@@ -114,6 +178,7 @@ header {
 .choose-color button:nth-child(4) {
     background-color: #F2C758;
 }
+
 .rotate {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -138,7 +203,7 @@ footer {
 .navigation {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 50px;
 }
 
 .arrow-line-left,
