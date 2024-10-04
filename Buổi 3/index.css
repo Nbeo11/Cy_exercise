@@ -1,0 +1,173 @@
+.shop {
+    margin: 0px 63px 0px 81px;
+    font-family: 'Unica One';
+    font-weight: 400;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 236px;
+    height: 132px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+.personal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 36px;
+}
+
+.img1 {
+    width: 36px;
+    height: 36px;
+}
+
+.img2 {
+    width: 46px;
+    height: 46px;
+}
+
+.container {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.product {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+
+}
+
+.product-picture {
+    margin-top: 51px;
+    width: 1107px;
+    height: 941px;
+}
+
+.type {
+    font-size: 72px;
+}
+
+.review-shoes {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    color: #131212;
+    font-size: 20px;
+}
+.color, .size, .rotate {
+    margin-left: 36px;
+    position: relative;
+}
+.choose-color > button:hover,
+.choose-size > button:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+}
+
+.choose-size > button {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #b3b3b3;
+    margin-right: 5px;
+}
+.choose-color > button {
+    width: 35px;
+    height: 35px;
+    background-color: #F2994A;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.choose-color button:nth-child(1) {
+    background-color: #B6A179;
+}
+
+.choose-color button:nth-child(2) {
+    background-color: #272425;
+}
+
+.choose-color button:nth-child(3) {
+    background-color: #6389CB;
+}
+
+.choose-color button:nth-child(4) {
+    background-color: #F2C758;
+}
+.rotate {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.arrow-line-left,
+.arrow-line-right {
+    position: relative;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    margin-top: 5px;
+}
+
+.arrow-line-left::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-right: 6px solid black;
+}
+
+.arrow-line-right::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 6px solid black;
+}

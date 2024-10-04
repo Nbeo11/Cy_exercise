@@ -387,6 +387,22 @@ input {
     font-size: 26px;
     padding-left: 15px;
 }
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container input {
+    padding-right: 30px; /* Để tránh nội dung nhập bị che bởi hình ảnh */
+}
+
+.input-password {
+    position: relative;
+}
+.input-icon {
+    position: absolute;
+    right: 100px; /* Đặt hình ảnh ở bên phải */
+}
 
 .login-button {
     background-color: #0085FF;
