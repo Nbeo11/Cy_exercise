@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .food {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            animation: appear 9s linear infinite;
+            border-radius: 5px;
+            box-shadow: 5px 1px 10px #737373;
+            opacity: 0;
+        }
+
+        div img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        div img:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        div img:nth-child(3) {
+            animation-delay: 6s;
+        }
+
+        @keyframes appear {
+            0% {
+                opacity: 0;
+            }
+            10%, 30% {
+                opacity: 1;
+            }
+            40% {
+                opacity: 0; 
+            }
+            100% {
+                opacity: 0; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="food">
+            <img src="./image/image1.jpg" alt="ảnh đồ ăn 1">
+            <img src="./image/image2.jpg" alt="ảnh đồ ăn 2">
+            <img src="./image/image3.jpg" alt="ảnh đồ ăn 3">
+        </div>
+    </div>
+</body>
+
+</html>
