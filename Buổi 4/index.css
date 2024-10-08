@@ -278,7 +278,7 @@ button:hover {
 
 .item-content {
     color: #4f4f4f;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     margin-top: 4rem;
     text-align: justify;
@@ -420,8 +420,8 @@ footer {
     }
 
     .root-items .image-item {
-        width: 22.5rem;
-        height: 22.5rem;
+        width: 15.5rem;
+        height: 15.5rem;
     }
 
     .root-items img {
@@ -434,6 +434,10 @@ footer {
         color: #8cc5f9;
         font-size: 3.5rem;
         font-weight: 500;
+    }
+    .item-content {
+        font-size: 2.1rem;
+        font-weight: 300;
     }
 }
 
