@@ -232,6 +232,7 @@ header {
                 }
             }
         }
+
         & button {
             font-size: 1.6rem;
             color: $first-text-color
@@ -310,6 +311,20 @@ header {
             overflow-x: auto;
             white-space: nowrap;
             gap: 5rem;
+            padding-bottom: 4rem;
+            &::-webkit-scrollbar {
+                height: 1.3rem;
+                width: 0.3rem;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $first-text-color;
+                border-radius: 13px;
+            }
 
             .customer {
                 flex: 0 0 auto;
@@ -362,7 +377,7 @@ header {
 
                 }
             }
-        } 
+        }
 
     }
 }

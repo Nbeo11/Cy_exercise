@@ -321,6 +321,18 @@ header .setting-language img {
   overflow-x: auto;
   white-space: nowrap;
   gap: 5rem;
+  padding-bottom: 4rem;
+}
+.about-company .company-customer .slide::-webkit-scrollbar {
+  height: 1.3rem;
+  width: 0.3rem;
+}
+.about-company .company-customer .slide::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.about-company .company-customer .slide::-webkit-scrollbar-thumb {
+  background-color: #8CC5F9;
+  border-radius: 13px;
 }
 .about-company .company-customer .slide .customer {
   flex: 0 0 auto;
