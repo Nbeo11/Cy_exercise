@@ -129,7 +129,7 @@ header {
 }
 
 .feature {
-    margin: 0 150px;
+    margin: 0 15rem;
     gap: 15.4rem;
 
     .feature-left {
@@ -232,6 +232,10 @@ header {
                 }
             }
         }
+        & button {
+            font-size: 1.6rem;
+            color: $first-text-color
+        }
     }
 
     & .better-together {
@@ -311,8 +315,8 @@ header {
                 flex: 0 0 auto;
                 width: 39.8rem;
                 height: 22.8rem;
-                border: 2px solid $first-text-color;
-                border-radius: 10px;
+                border: 0.2rem solid $first-text-color;
+                border-radius: 1rem;
                 text-align: center;
 
                 >div {
@@ -358,7 +362,7 @@ header {
 
                 }
             }
-        }
+        } 
 
     }
 }
@@ -496,9 +500,16 @@ footer {
     .about-company .better-together img {
         width: 100rem;
     }
+
     .number {
         flex-direction: column;
         gap: 10px;
         width: 100rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    html {
+        font-size: 3px;
     }
 }

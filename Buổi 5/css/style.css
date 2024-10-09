@@ -36,7 +36,7 @@ html {
   border: none;
   border-radius: 1rem;
   padding: 0;
-  margin-top: 87px;
+  margin-top: 8.7rem;
 }
 
 header {
@@ -143,7 +143,7 @@ header .setting-language img {
 }
 
 .feature {
-  margin: 0 150px;
+  margin: 0 15rem;
   gap: 15.4rem;
 }
 .feature .feature-left img {
@@ -245,11 +245,15 @@ header .setting-language img {
   margin-bottom: 4.6rem;
 }
 .about-company > .best-product .products > div > div button {
-  border: 2px solid #8CC5F9;
+  border: 0.2rem solid #8CC5F9;
   border-radius: 4.7rem;
   width: 14.9rem;
   height: 4rem;
   background-color: transparent;
+}
+.about-company > .best-product button {
+  font-size: 1.6rem;
+  color: #8CC5F9;
 }
 .about-company .better-together h3 {
   font-size: 3.5rem;
@@ -322,8 +326,8 @@ header .setting-language img {
   flex: 0 0 auto;
   width: 39.8rem;
   height: 22.8rem;
-  border: 2px solid #8CC5F9;
-  border-radius: 10px;
+  border: 0.2rem solid #8CC5F9;
+  border-radius: 1rem;
   text-align: center;
 }
 .about-company .company-customer .slide .customer > div {
@@ -492,6 +496,11 @@ footer > div .footer-right > div > div {
     flex-direction: column;
     gap: 10px;
     width: 100rem;
+  }
+}
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 3px;
   }
 }
 
